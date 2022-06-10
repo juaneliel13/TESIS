@@ -24,7 +24,7 @@ public class NumberShelvesScript : MonoBehaviour
     }
     void Start()
     {
-        estanteria = new Estanteria[16];
+        estanteria = new Estanteria[21];
         for (int i = 0; i < estanteria.Length; i++)
             estanteria[i] = new Estanteria(5,5);
 

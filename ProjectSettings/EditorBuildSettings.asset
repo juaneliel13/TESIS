@@ -5,19 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Menu.unity
+    guid: 971846261084cb94fbd8b72908906d9c
+  - enabled: 0
+    path: Assets/Scenes/Editor.unity
+    guid: d074faae4a25ef544a2c1b6f6f78dc9c
+  - enabled: 0
+    path: Assets/Scenes/editor_gondola.unity
+    guid: 1af50946d11529243b03731b8871710e
+  - enabled: 0
+    path: Assets/Scenes/selectorToRemember.unity
+    guid: 4c92a455655c21e48bcd75337a9f2f51
+  - enabled: 1
+    path: Assets/Scenes/aRecordar.unity
+    guid: f6afd9e6c3a77c245a644e8860c12c1e
   - enabled: 1
     path: Assets/Scenes/PrimerSuper.unity
     guid: d81dbcefca2df0f4ebae71286d8909a2
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 971846261084cb94fbd8b72908906d9c
-  - enabled: 1
-    path: Assets/Scenes/Editor.unity
-    guid: d074faae4a25ef544a2c1b6f6f78dc9c
-  - enabled: 1
-    path: Assets/Scenes/editor_gondola.unity
-    guid: 1af50946d11529243b03731b8871710e
-  - enabled: 1
-    path: Assets/Scenes/selectorToRemember.unity
-    guid: 4c92a455655c21e48bcd75337a9f2f51
   m_configObjects: {}

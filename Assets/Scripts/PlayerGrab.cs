@@ -26,9 +26,10 @@ public class PlayerGrab : MonoBehaviour
                // ball.transform.SetParent(myHands.transform);
                // ball.transform.localPosition = new Vector3(0f,-0.500f,0f);
                transform.localPosition = carrito.transform.position;
-                inHands=true;
+               inHands=true;
                // ball.SetActive(false);
                transform.SetParent(carrito.transform);
+                Debug.Log(transform.name);
             }
             else{
                 //this.GetComponent<PlayerGrab>().enabled=false;

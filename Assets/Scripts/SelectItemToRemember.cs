@@ -27,7 +27,7 @@ public class SelectItemToRemember : MonoBehaviour
         {
             ToRemember.toRemember.selected = this.gameObject;
             Debug.LogFormat("seleccionaste {0}", this.gameObject);
-            ToRemember.toRemember.addItem();
+           // ToRemember.toRemember.addItem();
            
         }
         else

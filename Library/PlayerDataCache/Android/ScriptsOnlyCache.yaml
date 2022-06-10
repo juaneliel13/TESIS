@@ -1,22 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - FillShelves
     - FirstPersonController
     - GameManagerMenu
     - GvrEditorEmulator
     - GvrPointerInputModule
     - GvrPointerPhysicsRaycaster
     - GvrReticlePointer
-    - ListItems
+    - Messaging
     - NumberShelvesScript
     - PlayerGrab
     - PrepareShelves
-    - SelectItemToRemember
-    - SelectProduct
     - ToRemember
+    - openRefri
     - pickUpCarrito
-    - setText
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -27,122 +24,9 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
-    - UnityEngine.UI.Mask
-    - UnityEngine.UI.RawImage
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Editor.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11396}
-    - Class: 114
-      Script: {instanceID: 11398}
-    - Class: 114
-      Script: {instanceID: 11400}
-    - Class: 114
-      Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11662}
-    - Class: 114
-      Script: {instanceID: 11736}
-    - Class: 114
-      Script: {instanceID: 11820}
-    - Class: 114
-      Script: {instanceID: 12602}
-    - Class: 114
-      Script: {instanceID: 13150}
-    - Class: 114
-      Script: {instanceID: 13572}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Menu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11396}
-    - Class: 114
-      Script: {instanceID: 11398}
-    - Class: 114
-      Script: {instanceID: 11400}
-    - Class: 114
-      Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11662}
-    - Class: 114
-      Script: {instanceID: 11736}
-    - Class: 114
-      Script: {instanceID: 13150}
-    - Class: 114
-      Script: {instanceID: 13572}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/PrimerSuper.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -177,25 +61,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 12032}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 12068}
     - Class: 114
-      Script: {instanceID: 12578}
+      Script: {instanceID: 12086}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 12972}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13496}
+      Script: {instanceID: 13438}
     - Class: 114
-      Script: {instanceID: 13526}
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 13862}
+    - Class: 114
+      Script: {instanceID: 13894}
+    - Class: 114
+      Script: {instanceID: 14006}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -206,80 +96,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    Assets/Scenes/editor_gondola.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11396}
-    - Class: 114
-      Script: {instanceID: 11398}
-    - Class: 114
-      Script: {instanceID: 11400}
-    - Class: 114
-      Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11552}
-    - Class: 114
-      Script: {instanceID: 11662}
-    - Class: 114
-      Script: {instanceID: 11736}
-    - Class: 114
-      Script: {instanceID: 12022}
-    - Class: 114
-      Script: {instanceID: 12344}
-    - Class: 114
-      Script: {instanceID: 12798}
-    - Class: 114
-      Script: {instanceID: 12844}
-    - Class: 114
-      Script: {instanceID: 13150}
-    - Class: 114
-      Script: {instanceID: 13154}
-    - Class: 114
-      Script: {instanceID: 13256}
-    - Class: 114
-      Script: {instanceID: 13572}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/selectorToRemember.unity:
+    Assets/Scenes/aRecordar.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -300,39 +119,39 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11396}
-    - Class: 114
-      Script: {instanceID: 11398}
-    - Class: 114
-      Script: {instanceID: 11400}
-    - Class: 114
-      Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11662}
-    - Class: 114
-      Script: {instanceID: 11708}
-    - Class: 114
-      Script: {instanceID: 11736}
-    - Class: 114
-      Script: {instanceID: 12370}
-    - Class: 114
-      Script: {instanceID: 13150}
-    - Class: 114
-      Script: {instanceID: 13572}
-    - Class: 115
+    - Class: 111
       Script: {instanceID: 0}
-    - Class: 128
+    - Class: 114
+      Script: {instanceID: 11574}
+    - Class: 114
+      Script: {instanceID: 11576}
+    - Class: 114
+      Script: {instanceID: 11946}
+    - Class: 114
+      Script: {instanceID: 12632}
+    - Class: 114
+      Script: {instanceID: 13482}
+    - Class: 114
+      Script: {instanceID: 13940}
+    - Class: 114
+      Script: {instanceID: 14006}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -345,16 +164,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -411,7 +230,7 @@ ScriptsOnlyBuild:
     className: EditorCameraOriginDict
   - hash:
       serializedVersion: 2
-      Hash: 81ce36998a72a50f64ba65b50a1c03d8
+      Hash: 31ae963f4729a466e176218f155a5bef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PrepareShelves
@@ -547,6 +366,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NumberShelvesScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Firebase.Platform.dll
+    namespaceName: Firebase.Platform
+    className: FirebaseMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: ff7d3100dcac4699fa2b5abb996d38b1
@@ -957,6 +782,12 @@ ScriptsOnlyBuild:
     className: setText
   - hash:
       serializedVersion: 2
+      Hash: fc46b65b9c8d6c29ddf112055018d5d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: openRefri
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1125,6 +956,12 @@ ScriptsOnlyBuild:
     className: AutoPlayVideo
   - hash:
       serializedVersion: 2
+      Hash: 4373e0d2840949d4bd78494da64a69ed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Messaging
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1143,9 +980,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/aRecordar.unity
   - Assets/Scenes/PrimerSuper.unity
-  - Assets/Scenes/Menu.unity
-  - Assets/Scenes/Editor.unity
-  - Assets/Scenes/editor_gondola.unity
-  - Assets/Scenes/selectorToRemember.unity
-  playerPath: C:/Users/juanv/Desktop/SuperMarket01.apk
+  playerPath: C:/Users/Juan Eliel/Desktop/primersuper.apk

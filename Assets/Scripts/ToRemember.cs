@@ -11,6 +11,7 @@ public class ToRemember : MonoBehaviour
     // Start is called before the first frame update
     public static ToRemember toRemember;
 
+
     void Awake()
     {
         if (toRemember == null)
@@ -26,33 +27,35 @@ public class ToRemember : MonoBehaviour
 
     void Start()
     {
-        selection = new Position[4, 5];
+      //  ListItems.listItems.list();
+           selection = new Position[4, 5];
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 5; j++) {
                 selection[i, j] = new Position();
-                selection[i, j].position = new Vector3(-1.13f + j*0.56f, 2.56f - i*0.99f, -0.528993f);
+                selection[i, j].position = new Vector3(-4f + j*0.75f, 2.56f - i*1.5f, -0.528993f);
             }
-        string[] keys = ListItems.listItems.selected.Keys.ToArray();
+      /*  string[] keys = ListItems.listItems.selected.Keys.ToArray();
         for (int i = 0; i < keys.Length; i++)
-            keys[i] = keys[i].Substring(0, 12);
+            keys[i] = keys[i].Substring(0, 12);*/
         Vector3 inicial = new Vector3(-5.81f, 2.56f, -0.5299931f);
-        int k = 0;
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 4; j++)
-            {
-                if (k < keys.Length)
-                {
-                    GameObject nuevo = Instantiate(Resources.Load(keys[k]), new Vector3(inicial.x + j * 0.647f, inicial.y - i * 0.93f, inicial.z), Quaternion.identity) as GameObject;
-                    nuevo.transform.localScale = new Vector3(2, 2, 2);
-                    nuevo.transform.rotation = Quaternion.Euler(0, 90, 0);
-                    nuevo.AddComponent<SelectItemToRemember>();
-                    nuevo.AddComponent<MeshCollider>();
-                    k++;
-                }
-                else
-                    goto end;
-            }
-        end:;
+        /* int k = 0;
+         for (int i = 0; i < 3; i++)
+             for (int j = 0; j < 4; j++)
+             {
+                 if (k < keys.Length)
+                 {
+                     GameObject nuevo = Instantiate(Resources.Load(keys[k]), new Vector3(inicial.x + j * 0.647f, inicial.y - i * 0.93f, inicial.z), Quaternion.identity) as GameObject;
+                     nuevo.transform.localScale = new Vector3(2, 2, 2);
+                     nuevo.transform.rotation = Quaternion.Euler(0, 90, 0);
+                     nuevo.AddComponent<SelectItemToRemember>();
+                     nuevo.AddComponent<MeshCollider>();
+                     k++;
+                 }
+                 else
+                     goto end;
+             }
+         end:;*/
+
     }
 
     // Update is called once per frame
@@ -60,7 +63,7 @@ public class ToRemember : MonoBehaviour
     {
         
     }
-    public void addItem()
+    public void addItem(String item)
     {
         for (int i = 0; i < 4; i++)
         {
@@ -69,14 +72,14 @@ public class ToRemember : MonoBehaviour
                 if (selection[i, j].free)
                 {
                     selection[i, j].seleccionado = selected.name;
-                    GameObject nuevo = Instantiate(Resources.Load(selected.name.Substring(0,12)), selection[i, j].position, Quaternion.identity) as GameObject;
+                    GameObject nuevo = Instantiate(Resources.Load(item), selection[i, j].position, Quaternion.identity) as GameObject;
                     nuevo.transform.rotation = selected.transform.rotation;
-                    nuevo.transform.localScale = selected.transform.localScale;
-                    nuevo.AddComponent<SelectItemToRemember>();
+                    nuevo.transform.localScale = new Vector3(3, 3, 3);
+                 /*   nuevo.AddComponent<SelectItemToRemember>();
                     nuevo.GetComponent<SelectItemToRemember>().included = true;
                     nuevo.GetComponent<SelectItemToRemember>().i = i;
                     nuevo.GetComponent<SelectItemToRemember>().j = j;
-                    nuevo.AddComponent<MeshCollider>();
+                    nuevo.AddComponent<MeshCollider>();*/
                     nuevo.transform.SetParent(this.gameObject.transform);
 
                     selection[i, j].free = false;
